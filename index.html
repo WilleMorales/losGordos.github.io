@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="css/estilo.css" rel="stylesheet" title="Default Style">
+  
+</head>
+<body>
+     <!-- Header -->
+     <header x-data="{ open: false }" class="header">
+        <!-- Logo -->
+        <div class="header_logo">
+        <img  src="img/logo_pasteleria.png">
+       
+        </div>
+        <!-- Boton abrir -->
+        <button class="header__button-nav--open" x-on:click="open = true">Abrir</button>
+        <!-- Navegador -->
+        <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+          <!-- Boton cerrar -->
+          <div class="nav__button" x-on:click="open = false">
+            <button class="header__button-nav--close">Cerrar</button>
+          </div>
+          <!-- Menu -->
+          <ul class="nav__ul">
+            <li class="nav__item"><a href="#" class="nav__link">Productos.</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Accesorios.</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Acerca de Nosotros.</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contactanos.</a></li>
+          </ul>
+        </nav>
+        <!-- Fin Navegador -->
+      </header>
+      <!-- Fin Header -->
+<div clas="banner">
+    <img src="img/banner.png" title="">
+</div>
+<h1>Productos</h1>
+<div class="container">
+    <div class="card">
+        <h1 style=" background-color: blueviolet;text-align: center; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Pasteles</h1>
+        <img width="120px" height="90px" src="img/catalogo/pastel.png">
+        <h2>Pastel ESPECIAL </h2>
+        <p>Exquisito pastel con tres rellenos: fresa con queso, durazno con queso y nuez, bañado con nuestro delicioso jarabe de tres leches, cubierto con chantilly y decorado con durazno y cereza. </p>
+       
+        <section class="form-Compra">
+            <h3>Cubierta:</h3>
+            <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Fondan</option>
+                <option>Caramelo</option>
+                <option>Chocolate</option>
+                <option>Crema Pastelera</option>
+               </select>
+               <h3>Sabor 1:</h3>
+               <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Chocolate</option>
+                <option>Arandano</option>
+                <option>Vanilla</option>
+                <option>Cajeta</option>
+               </select>
+               <h3>Sabor 2:</h3>
+               <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Chocolate</option>
+                <option>Arandano</option>
+                <option>Vanilla</option>
+                <option>Cajeta</option>
+               </select>
+               <h3>Cantidad:</h3><input type="number">
+               <button>Comprar</button>
+        </section>
+
+    </div>
+    <div class="card">
+        <h1 style=" background-color: blueviolet;text-align: center; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Panes</h1>
+        <img width="120px" height="90px" src="img/catalogo/pan.png">
+        <h2>Pan Extra queso</h2>
+        <p>Exquisito Pan de levadura, relleno de delicioso, extra queso crema, y decorado con un glaseado especial de la casa..</p>
+        <section class="form-Compra">
+            <h3>Cubierta:</h3>
+            <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Fondan</option>
+                <option>Caramelo</option>
+                <option>Chocolate</option>
+                <option>Crema Pastelera</option>
+               </select>
+               <h3>Sabor 1:</h3>
+               <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Chocolate</option>
+                <option>Arandano</option>
+                <option>Vanilla</option>
+                <option>Cajeta</option>
+               </select>
+               <h3>Sabor 2:</h3>
+               <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Chocolate</option>
+                <option>Arandano</option>
+                <option>Vanilla</option>
+                <option>Cajeta</option>
+               </select>
+               <h3>Cantidad:</h3><input type="number">
+               <button>Comprar</button>
+        </section>
+      </div>
+      <div class="card">
+        <h1 style=" background-color: blueviolet;text-align: center; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Bocadillos</h1>
+        <img width="120px" height="90px" src="img/catalogo/bocadillo.png">
+        <h2>BOLITAS DE QUESO</h2>
+        <p>Crujientes bolitas de pasta tipo hojaldre rellenas de queso crema y escarchadas con azúcar</p>
+        <section class="form-Compra">
+            <h3>Cubierta:</h3>
+            <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Fondan</option>
+                <option>Caramelo</option>
+                <option>Chocolate</option>
+                <option>Crema Pastelera</option>
+               </select>
+               <h3>Sabor 1:</h3>
+               <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Chocolate</option>
+                <option>Arandano</option>
+                <option>Vanilla</option>
+                <option>Cajeta</option>
+               </select>
+               <h3>Sabor 2:</h3>
+               <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Chocolate</option>
+                <option>Arandano</option>
+                <option>Vanilla</option>
+                <option>Cajeta</option>
+               </select>
+               <h3>Cantidad:</h3><input type="number">
+               <button>Comprar</button>
+        </section>
+      </div>
+      <div class="card">
+        <h1 style=" background-color: blueviolet;text-align: center; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Pays y Cheesecakes</h1>
+        <img width="120px" height="90px" src="img/catalogo/pays.png">
+        <h2>CHEESECAKE NEW YORK</h2>
+        <p>Exótico cheesecake elaborado a base de queso crema con la receta especial de la casa, sobre una capa de galleta, decorado con deliciosas y selectas fresas naturales.</p>
+        <section class="form-Compra">
+            <h3>Cubierta:</h3>
+            <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Fondan</option>
+                <option>Caramelo</option>
+                <option>Chocolate</option>
+                <option>Crema Pastelera</option>
+               </select>
+               <h3>Sabor 1:</h3>
+               <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Chocolate</option>
+                <option>Arandano</option>
+                <option>Vanilla</option>
+                <option>Cajeta</option>
+               </select>
+               <h3>Sabor 2:</h3>
+               <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Chocolate</option>
+                <option>Arandano</option>
+                <option>Vanilla</option>
+                <option>Cajeta</option>
+               </select>
+               <h3>Cantidad:</h3><input type="number">
+               <button>Comprar</button>
+        </section>
+      </div>
+      <div class="card">
+            <h1 style=" background-color: blueviolet;text-align: center; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Postres</h1>
+            <img width="120px" height="90px" src="img/catalogo/postres.png">
+        <h2>GELATINA MEDIANA</h2>
+        <p>Gelatina mosaico a base de tres leches en forma de rosca</p>
+        <section class="form-Compra">
+            <h3>Cubierta:</h3>
+            <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Fondan</option>
+                <option>Caramelo</option>
+                <option>Chocolate</option>
+                <option>Crema Pastelera</option>
+               </select>
+               <h3>Sabor 1:</h3>
+               <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Chocolate</option>
+                <option>Arandano</option>
+                <option>Vanilla</option>
+                <option>Cajeta</option>
+               </select>
+               <h3>Sabor 2:</h3>
+               <select class="select-css">
+                <option>Seleccionar...</option>
+                <option>Chocolate</option>
+                <option>Arandano</option>
+                <option>Vanilla</option>
+                <option>Cajeta</option>
+               </select>
+               <h3>Cantidad:</h3><input type="number">
+               <button>Comprar</button>
+        </section>
+      </div>
+</div>
+<div class="formRegistro">
+    <section class="form-register">
+        <h4>Formulario Registro</h4>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+        <input class="controls" type="number" name="num_casa" id="num_casa" placeholder="Ingrese su Numero Telefonico">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+        <input class="botons" type="submit" value="Registrar">
+        <p><a href="#">¿Ya tengo Cuenta?</a></p>
+      </section>
+</div>
+
+<!--<div class="con-cajas">
+    
+    <br>
+    <div class="prv_1">
+        <div class="">
+          <h1 style=" background-color: blueviolet;text-align: center; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Pasteles</h1>
+          <img width="120px" height="90px" src="img/catalogo/pastel.png">
+        </div>
+        <h2>Pastel ESPECIAL </h2>
+        <p>Exquisito pastel con tres rellenos: fresa con queso, durazno con queso y nuez, bañado con nuestro delicioso jarabe de tres leches, cubierto con chantilly y decorado con durazno y cereza. </p>
+      </div>
+      <div class="prv_2">
+        <div class="">
+            <h1 style=" background-color: blueviolet;text-align: center; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Panes</h1>
+            <img width="120px" height="90px" src="img/catalogo/pan.png">
+        </div>
+        <h2>Pan Extra queso</h2>
+        <p>Exquisito Pan de levadura, relleno de delicioso, extra queso crema, y decorado con un glaseado especial de la casa..</p>
+      </div>
+      <div class="prv_3">
+        <div class="">
+            <h1 style=" background-color: blueviolet;text-align: center; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Bocadillos</h1>
+            <img width="120px" height="90px" src="img/catalogo/bocadillo.png">
+        </div>
+        <h2>BOLITAS DE QUESO</h2>
+        <p>Crujientes bolitas de pasta tipo hojaldre rellenas de queso crema y escarchadas con azúcar</p>
+      </div>
+      <div class="prv_4">
+        <div class="">
+            <h1 style=" background-color: blueviolet;text-align: center; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Pays y Cheesecakes</h1>
+            <img width="120px" height="90px" src="img/catalogo/pays.png">
+        </div>
+        <h2>CHEESECAKE NEW YORK</h2>
+        <p>Exótico cheesecake elaborado a base de queso crema con la receta especial de la casa, sobre una capa de galleta, decorado con deliciosas y selectas fresas naturales.</p>
+      </div>
+      <div class="prv_5">
+        <div class="">
+            <h1 style=" background-color: blueviolet;text-align: center; font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Postres</h1>
+            <img width="120px" height="90px" src="img/catalogo/postres.png">
+        </div>
+        <h2>GELATINA MEDIANA</h2>
+        <p>Gelatina mosaico a base de tres leches en forma de rosca</p>
+      </div>
+      </div>-->
+
+  
+
+</body>
+</html>
